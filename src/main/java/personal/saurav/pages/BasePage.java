@@ -5,12 +5,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import personal.saurav.pages.otherPages.LoginPage;
-import personal.saurav.pages.otherPages.SecureAreaPage;
 
 import java.time.Duration;
-
-import static personal.saurav.driver.DriverManager.getDriver;
 
 public class BasePage {
 
@@ -50,13 +46,5 @@ public class BasePage {
         } catch (Exception e) {
             System.out.println("Failed to clear background ad nodes: " + e.getMessage());
         }
-    }
-
-    protected LoginPage loginPage() {
-        return new LoginPage(getDriver());
-    }
-
-    protected SecureAreaPage secureAreaPage() {
-        return new SecureAreaPage(getDriver());
     }
 }

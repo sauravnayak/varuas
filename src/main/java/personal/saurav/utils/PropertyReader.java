@@ -7,7 +7,7 @@ import java.util.Properties;
 
 public class PropertyReader {
     private  static Properties property = new Properties();
-    String filepath =System.getProperty("user.dir")+"/src/main/java/personal/saurav/utils/Project.properties";
+
     static {
         String filepath = System.getProperty("user.dir")
                 + File.separator + "src"
