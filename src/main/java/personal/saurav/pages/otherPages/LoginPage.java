@@ -4,14 +4,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import personal.saurav.pages.BasePage;
 
-public class LoginPages extends BasePage {
+public class LoginPage extends BasePage {
 
     private final By userNameField = By.id("username");
     private final By passwordField = By.id("password");
     private final By submitButton = By.id("submit-login");
     private final By adFrame = By.id("aswift_7");
 
-    public LoginPages(WebDriver driver) {
+    public LoginPage(WebDriver driver) {
         super(driver);
     }
 
@@ -25,5 +25,4 @@ public class LoginPages extends BasePage {
         click(submitButton);
         return new SecureAreaPage(driver);
     }
-
 }
